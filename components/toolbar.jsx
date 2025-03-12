@@ -10,6 +10,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 
+
 export default function MenuAppBar() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const navigate = useNavigate();
@@ -41,7 +42,6 @@ export default function MenuAppBar() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        {/* Adicione o título aqui, se necessário */}
                     </Typography>
                     <div>
                         <IconButton
@@ -52,7 +52,7 @@ export default function MenuAppBar() {
                             onClick={handleMenu}
                             color="inherit"
                         >
-                            <AccountCircle /> {/* Usando o novo ícone */}
+                            <AccountCircle />
                         </IconButton>
                         <Menu
                             id="menu-appbar"
@@ -69,7 +69,7 @@ export default function MenuAppBar() {
                             open={Boolean(anchorEl)}
                             onClose={handleClose}
                         >
-                            <MenuItem onClick={() => handleNavigate('/account')}>Detalhes da conta</MenuItem>
+                            <MenuItem onClick={() => handleNavigate('/')}>Detalhes da conta</MenuItem>
                             <MenuItem onClick={() => handleNavigate('/deposito')}>Deposito</MenuItem>
                             <MenuItem onClick={() => handleNavigate('/saque')}>Saque</MenuItem>
                         </Menu>
