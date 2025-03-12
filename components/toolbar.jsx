@@ -69,7 +69,7 @@ export default function MenuAppBar() {
                             open={Boolean(anchorEl)}
                             onClose={handleClose}
                         >
-                            <MenuItem onClick={() => handleNavigate('/')}>Detalhes da conta</MenuItem>
+                            <MenuItem onClick={() => handleNavigate('/account')}>Detalhes da conta</MenuItem>
                             <MenuItem onClick={() => handleNavigate('/deposito')}>Deposito</MenuItem>
                             <MenuItem onClick={() => handleNavigate('/saque')}>Saque</MenuItem>
                         </Menu>
