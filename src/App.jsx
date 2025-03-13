@@ -4,6 +4,7 @@ import MenuAppBar from '../components/toolbar';
 import Deposito from '../pages/deposito';
 import Saque from '../pages/saque';
 import Account from '../pages/account';
+import Valor from '../pages/valor';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/deposito" element={<Deposito />} />
         <Route path="/saque" element={<Saque />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/valor" element={<Valor />} />
       </Routes>
     </Router>
   );

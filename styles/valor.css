@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.deposit_container{
+.valor_container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
     padding: 31px;
 }
 
-.deposit_content{
+.valor_content{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,10 +28,10 @@
     height: 100%;
     margin-top: 150px;
 }
-.deposit_list{
+.valor_list{
     list-style: none;
 }
-.deposit_list li {
+.valor_list li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@
     cursor: pointer;
     
 }
-.deposit_button{
+.valor_button{
     display: flex;
     justify-content: center;
     align-items: center;
