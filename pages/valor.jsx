@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 import '../styles/valor.css';
 import qrcodeimage from '../src/assets/qrcode.png';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import { useNavigate } from 'react-router-dom';
 
 const Valor = () => {
+
+    const navigate = useNavigate();
+    const handleItemClick = (path) => {
+        navigate(path);
+    }
+
     const [qrcode, setQrcode] = useState('none');
     const [valor, setValor] = useState(''); // Estado para armazenar o valor do input
-    const [valorSubmetido, setValorSubmetido] = useState(''); // Estado para armazenar o valor submetido
+    const [valorSubmetido, setValorSubmetido] = useState(''); // Estado para armazenar o valor quando e apertado o botao submetido
 
     const handleSubmit = (event) => {
         event.preventDefault();
         setValorSubmetido(valor);
-        console.log('Valor digitado:', valor);
-
 
         setQrcode('none');
         setTimeout(() => {
@@ -25,8 +31,13 @@ const Valor = () => {
 
     return (
         <div className='deposit_container'>
-            <div>
+            <div className='deposit_container_header'>
+                <ArrowBackIosNewIcon 
+                    style={{ fontSize: '30px', color: 'white',cursor: 'pointer' }} 
+                    onClick={() => handleItemClick('/deposito')}
+                />
                 <h1>Depósito</h1>
+                <p></p>
             </div>
 
             {valorSubmetido > 0 && (

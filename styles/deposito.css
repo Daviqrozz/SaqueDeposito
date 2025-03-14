@@ -65,3 +65,9 @@ form input[type="number"] {
     border-radius: 5px;
     box-sizing: border-box;
 }
+.deposit_container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
