@@ -71,3 +71,25 @@ form input[type="number"] {
     align-items: center;
     width: 100%;
 }
+
+@media screen and (max-width: 768px){
+    .deposit_container{
+        width: 90vw;
+        height: 90vh;
+    }
+    form label{
+        font-size: 15px;
+    }
+    form input[type="number"] {
+        padding: 5px;
+        margin: 5px 0;
+    }
+    .deposit_list li {
+        padding: 5px;
+        margin: 5px 0;
+    }
+    .deposit_button{
+        padding: 5px;
+    }
+    
+}

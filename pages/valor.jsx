@@ -45,7 +45,7 @@ const Valor = () => {
                     <img src={qrcodeimage} alt='qrcode' className='qrcode_img' />
                 </div>
             )}
-            <div>
+            <div className='valor_text'>
                 {valorSubmetido > 0 ? (
                     <p style={{ display: 'flex' }}>Escaneie o QR Code para depositar o valor de {valorSubmetido}R$</p>
                 ) : (

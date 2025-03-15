@@ -11,3 +11,29 @@
     height: 250px;
     background-color: white;
 }
+@media (max-width: 1366px) {
+    .qrcode_container {
+        height: 500px;
+        width: 200px;
+        margin-top: 5px;
+    }
+    .qrcode_img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .qrcode_container {
+        height: 300px;
+        width: 150px;
+        margin-top: 5px;
+    }
+    .qrcode_img{
+        width: 250px;
+        height: 250px;
+    }
+    .valor_text{
+        display: none;
+    }
+}
