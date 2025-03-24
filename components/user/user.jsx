@@ -17,6 +17,9 @@ const User = () => {
                 <UserMail />
             </div>
 
+            <div className='user_balance'>
+                <h3>Saldo: R$ 0,00</h3>
+            </div>
 
         </div>
     );

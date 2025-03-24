@@ -15,7 +15,7 @@ const Deposito = () => {
 
     return (
         <div className='deposit_container'>
-            <h1>Selecione a forma</h1>
+            <h1>Metodo</h1>
             <div className='deposit_content'>
                 <ul className='deposit_list'>
                     <li onClick={() => handleItemClick('/valor')}>Pix</li>

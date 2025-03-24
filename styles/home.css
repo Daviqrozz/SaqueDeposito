@@ -1,0 +1,18 @@
+.username_box {
+    margin-bottom: 10px;
+}
+
+.password_box {
+    margin-bottom: 10px;
+}
+
+.button_box {
+    margin-top: 10px;
+}
+
+.login_form {
+    width: 300px;
+    padding:50px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
